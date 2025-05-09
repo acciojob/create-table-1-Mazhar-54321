@@ -1,6 +1,7 @@
 function insert_Row() {
   //Write your code here
  const table = document.getElementById("sampleTable");
+ const tbody = document.getElementById("tbody");
  const children = table.childNodes;
  
  console.log(children);
@@ -11,7 +12,7 @@ function insert_Row() {
  cell2.textContent="New Cell2";
  tr.appendChild(cell1);
  tr.appendChild(cell2);
- table.prepend(tr);
+ tbody.prepend(tr);
 // table.appendChild(children)
 
 }
